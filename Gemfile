@@ -45,5 +45,11 @@ group :development, :test do
   gem 'spring'
 end
 
-gem 'quiet_assets', group: :development
+group :development do
+  gem 'quiet_assets'
+end
+
+group :production, :staging do
+  gem 'rails_12factor'
+end
 
