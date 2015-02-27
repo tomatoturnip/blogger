@@ -13,11 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require bootstrap.min
 //= require turbolinks
 //= require_tree .
-
-$(document).ready(function(){
-  $('.carousel').carousel({
-      interval: 5000 //changes the speed
-  });
-});
