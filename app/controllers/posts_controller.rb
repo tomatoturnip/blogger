@@ -36,7 +36,7 @@ class PostsController < ApplicationController
     @post.destroy
   end
 
-private
+  private
 
   def post_params
     params.require(:post).permit(:title, :body)
