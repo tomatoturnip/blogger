@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: foodblog_production
-  username: foodblog
-  password: <%= ENV['FOODBLOG_DATABASE_PASSWORD'] %>
+  username:
+  password:
