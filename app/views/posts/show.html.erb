@@ -1,0 +1,17 @@
+<div class="container">
+
+  <div class="row">
+    <div class="box">
+      <div class="col-lg-12 text-center">
+        <img class="img-responsive img-border img-full" src="<%= asset_path('slide-1.jpg') %>" alt="">
+        <h2><%= @post.title %>
+          <br>
+          <small><%= @post.date.strftime("%B %d, %Y") %></small>
+        </h2>
+        <p><%= @post.body %></p>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+</div>
