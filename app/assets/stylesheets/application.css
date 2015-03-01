@@ -13,4 +13,5 @@
  *= require bootstrap
  *= require_self
  *= require business-casual
+ *= require jquery-ui
  */
