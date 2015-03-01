@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'high_voltage', '~> 2.2.1'
 gem 'simple_form'
 gem 'jquery-ui-rails'
+gem 'kaminari'
 
 
 # Use ActiveModel has_secure_password
