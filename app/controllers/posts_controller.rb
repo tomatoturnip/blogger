@@ -45,9 +45,9 @@ class PostsController < ApplicationController
     @post.destroy
   end
 
-  def tag_cloud
-    @tags = Post.tag_counts_on(:tags)
-  end
+  # def tag_cloud
+  #   @tags = Post.tag_counts_on(:tags)
+  # end
 
   private
 
