@@ -27,6 +27,7 @@ gem 'high_voltage', '~> 2.2.1'
 gem 'simple_form'
 gem 'jquery-ui-rails'
 gem 'kaminari'
+gem 'acts-as-taggable-on', '~> 3.4'
 
 
 # Use ActiveModel has_secure_password
