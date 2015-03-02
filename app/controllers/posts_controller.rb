@@ -1,6 +1,12 @@
 class PostsController < ApplicationController
+  before_action :tag_cloud
+
   def index
-    @posts = Post.all.ordered.page(params[:page]).per(5)
+    if params[:tag]
+      @posts = Post.tagged_with(params[:tag])
+    else
+      @posts = Post.all.ordered.page(params[:page]).per(5)
+    end
   end
 
   def new
@@ -37,6 +43,10 @@ class PostsController < ApplicationController
   def destroy
     @post = Post.find(params[:id])
     @post.destroy
+  end
+
+  def tag_cloud
+    @tags = Post.tag_counts_on(:tags)
   end
 
   private
