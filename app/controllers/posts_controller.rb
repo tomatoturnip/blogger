@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-
   def index
     @posts = Post.all.ordered.page(params[:page]).per(5)
   end
@@ -43,6 +42,6 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :body, :date)
+    params.require(:post).permit(:title, :body, :date, :tag_list)
   end
 end
