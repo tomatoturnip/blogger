@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_action :tag_cloud
+  # before_action :tag_cloud
 
   def index
     if params[:tag]
