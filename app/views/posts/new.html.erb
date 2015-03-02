@@ -8,31 +8,7 @@
           <strong>post</strong>
         </h2>
         <hr>
-        <%= simple_form_for @post do |f| %>
-        <form role="form">
-          <div class="row">
-            <div class="form-group col-lg-8">
-              <%= f.input :title, class: "form-control" %>
-            </div>
-            <div class="form-group col-lg-4">
-              <%= f.input :date, as: :string, input_html: { class: "datepicker", value: Time.now.strftime('%B %d, %Y') } %>
-            </div>
-            <div class="clearfix"></div>
-            <div class="form-group col-lg-12">
-              <label>Message</label>
-              <%= f.text_area :body, class: "form-control", rows: "6" %>
-            </div>
-            <div class="form-group col-lg-12">
-              <label>Tags</label>
-              <%= f.input :tag_list, class: "form-control" %>
-            </div>
-            <div class="form-group col-lg-12">
-              <input type="hidden" name="save" value="contact">
-              <button type="submit" class="btn btn-default">Post</button>
-            </div>
-          </div>
-          <% end %>
-        </form>
+        <%= render 'form' %>
       </div>
     </div>
   </div>
